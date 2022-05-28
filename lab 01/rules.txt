@@ -1,0 +1,83 @@
+//QUERY RULES
+Rule "book"
+IF "favorite-book" = ? AND "repair" = ? THEN "favorite-book" = (Choose your favorite book)
+
+Rule "writer"
+IF "favorite-writer" = ? AND "repair" = ? THEN "favorite-writer" = (Choose your favorite writer)
+
+Rule "literature-fiction-type"
+IF "favorite-liter" = fiction AND "liter-type" = ? AND "repair" = ? THEN "liter-type" = (Choose the type of literature)
+
+Rule "literature-popular-type"
+IF "favorite-liter" = popular AND "liter-type" = ? AND "repair" = ? THEN "liter-type" = (Choose the type of literature)
+
+Rule "literature-fiction-genre"
+IF "liter-type" = drama AND "liter-genre" = ? AND "repair" = ? THEN "liter-genre" = (Choose a genre of literature)
+
+Rule "literature-popular-genre"
+IF "liter-type" = science AND "liter-genre" = ? AND "repair" = ? THEN "liter-genre" = (Choose a genre of literature)
+
+
+//INTERMEDIATE RULES
+Rule "literature-fiction"
+IF "favorite-book" = 1 OR "favorite-book" = 2 AND "favorite-liter" = ? AND "repair" = ? THEN "favorite-liter" = fiction
+
+Rule "literature-popular"
+IF "favorite-book" = 3 OR "favorite-book" = 4 AND "favorite-liter" = ? AND "repair" = ? THEN "favorite-liter" = popular
+
+Rule "literature-genre-roman"
+IF "liter-type" = epic AND "liter-genre" = ? AND "repair" = ? THEN "liter-genre" = roman
+
+Rule "literature-genre-psychology"
+IF "liter-type" = psychology AND "liter-genre" = ? AND "repair" = ? THEN "liter-genre" = humanitarian
+
+
+//REPAIR RULES
+Rule "repair-hello-ficus"
+IF "liter-genre" = roman AND "favorite-writer" = orwell AND "repair" = ? THEN "repair" = Keep the Aspidistra Flying
+
+Rule "repair-point-conter-point"
+IF "liter-genre" = roman AND "favorite-writer" = strugatsky AND "repair" = ? THEN "repair" = Point Counter Point
+
+Rule "repair-forward-foundation"
+IF "liter-genre" = roman AND "favorite-writer" = freud AND "repair" = ? THEN "repair" = Forward the Foundation
+
+Rule "repair-or-or"
+IF "liter-genre" = roman AND "favorite-writer" = gegel AND "repair" = ? THEN "repair" = Or-Or
+
+Rule "repair-burmese-days"
+IF "liter-genre" = tragicomedy AND "favorite-writer" = orwell AND "repair" = ? THEN "repair" = Burmese Days
+
+Rule "repair-interns"
+IF "liter-genre" = tragicomedy AND "favorite-writer" = strugatsky AND "repair" = ? THEN "repair" = Interns
+
+Rule "repair-totem-taboo"
+IF "liter-genre" = tragicomedy AND "favorite-writer" = freud AND "repair" = ? THEN "repair" = Totem and Taboo
+
+Rule "repair-philosophy-right"
+IF "liter-genre" = tragicomedy AND "favorite-writer" = gegel AND "repair" = ? THEN "repair" = Elements of the Philosophy of Right
+
+Rule "repair-island"
+IF "liter-genre" = humanitarian AND "favorite-writer" = orwell AND "repair" = ? THEN "repair" = Island
+
+Rule "repair-kid-from-hell"
+IF "liter-genre" = humanitarian AND "favorite-writer" = strugatsky AND "repair" = ? THEN "repair" = The Kid from Hell
+
+Rule "repair-answer-to-job"
+IF "liter-genre" = humanitarian AND "favorite-writer" = freud AND "repair" = ? THEN "repair" = Answer to Job
+
+Rule "repair-philosophy-spirit"
+IF "liter-genre" = humanitarian AND "favorite-writer" = gegel AND "repair" = ? THEN "repair" = Philosophy of spirit
+
+Rule "repair-hacking-linux"
+IF "liter-genre" = technical AND "favorite-writer" = orwell AND "repair" = ? THEN "repair" = Hacking on LINUX
+
+Rule "repair-last-screw"
+IF "liter-genre" = technical AND "favorite-writer" = strugatsky AND "repair" = ? THEN "repair" = Until the last screw
+
+Rule "repair-multithreaded-js"
+IF "liter-genre" = technical AND "favorite-writer" = freud AND "repair" = ? THEN "repair" = Multithreaded Javascript
+
+Rule "repair-fender-protection"
+IF "liter-genre" = technical AND "favorite-writer" = gegel AND "repair" = ? THEN "repair" = Fender protection
+
