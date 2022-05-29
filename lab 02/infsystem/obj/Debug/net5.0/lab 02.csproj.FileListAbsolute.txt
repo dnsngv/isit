@@ -1,0 +1,16 @@
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\bin\Debug\net5.0\lab 02.exe
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\bin\Debug\net5.0\lab 02.deps.json
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\bin\Debug\net5.0\lab 02.runtimeconfig.json
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\bin\Debug\net5.0\lab 02.runtimeconfig.dev.json
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\bin\Debug\net5.0\lab 02.dll
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\bin\Debug\net5.0\ref\lab 02.dll
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\bin\Debug\net5.0\lab 02.pdb
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\obj\Debug\net5.0\lab 02.csprojAssemblyReference.cache
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\obj\Debug\net5.0\lab 02.GeneratedMSBuildEditorConfig.editorconfig
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\obj\Debug\net5.0\lab 02.AssemblyInfoInputs.cache
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\obj\Debug\net5.0\lab 02.AssemblyInfo.cs
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\obj\Debug\net5.0\lab 02.csproj.CoreCompileInputs.cache
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\obj\Debug\net5.0\lab 02.dll
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\obj\Debug\net5.0\ref\lab 02.dll
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\obj\Debug\net5.0\lab 02.pdb
+E:\Учеба ПНИПУ\3 курс - 6 семестр\Интеллектуальные ИСИТ (Истомин Д.А.)\lab 02\infsystem\obj\Debug\net5.0\lab 02.genruntimeconfig.cache

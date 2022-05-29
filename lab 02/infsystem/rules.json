@@ -1,0 +1,586 @@
+[
+    {
+        "Condition": {
+            "FactName": "favorite-book",
+            "Comparison": "?"
+        },
+        "Assertions": [
+            {
+            "Name": "favorite-book",
+            "Input": 
+                {
+                    "Question": "Choose your favorite book",
+                    "Values": [
+                    "Brothers Karamazov",
+                    "Metamorphosis",
+                    "Homo Deus",
+                    "God as illusion"
+                    ]
+                }
+            }
+        ]
+    },
+
+    {
+        "Condition": {
+            "FactName": "favorite-writer",
+            "Comparison": "?"
+        },
+        "Assertions": [
+            {
+            "Name": "favorite-writer",
+            "Input": 
+                {
+                    "Question": "Choose your favorite writer",
+                    "Values": [
+                    "Orwell",
+                    "Strugatsky",
+                    "Freud",
+                    "Gegel"
+                    ]
+                }
+            }
+        ]
+    },
+
+    {
+    "Condition": {
+        "Operator": "AND",
+        "Conditions": [
+            {
+                "FactName": "liter-type",
+                "Comparison": "?"
+            },
+            {
+                "FactName": "favorite-liter",
+                "Comparison": "==",
+                "Value": { "StringValue": "Fiction" }
+            }
+        ]
+    },
+    "Assertions": [
+        {
+        "Name": "liter-type",
+        "Input": 
+            {
+                "Question": "Choose the type of literature",
+                "Values": [
+                "Epic",
+                "Drama"
+                ]
+            }
+        }
+    ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-type",
+                    "Comparison": "?"
+                },
+                {
+                    "FactName": "favorite-liter",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Popular" }
+                }
+            ]
+        },
+        "Assertions": [
+            {
+            "Name": "liter-type",
+            "Input": 
+                {
+                    "Question": "Choose the type of literature",
+                    "Values": [
+                    "Psychology",
+                    "Science"
+                    ]
+                }
+            }
+        ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "?"
+                },
+                {
+                    "FactName": "liter-type",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Drama" }
+                }
+            ]
+        },
+        "Assertions": [
+            {
+            "Name": "liter-genre",
+            "Input": 
+                {
+                    "Question": "Choose a genre of literature",
+                    "Values": [
+                    "Roman",
+                    "Tragicomedy"
+                    ]
+                }
+            }
+        ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "?"
+                },
+                {
+                    "FactName": "liter-type",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Science" }
+                }
+            ]
+        },
+        "Assertions": [
+            {
+            "Name": "liter-genre",
+            "Input": 
+                {
+                    "Question": "Choose a genre of literature",
+                    "Values": [
+                    "Humanitarian",
+                    "Technical"
+                    ]
+                }
+            }
+        ]
+    },
+
+
+
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "favorite-liter",
+                    "Comparison": "?"
+                },
+                {
+                    "Operator": "OR",
+                    "Conditions": [
+                        {
+                            "FactName": "favorite-book",
+                            "Comparison": "==",
+                            "Value": { "StringValue": "Brothers Karamazov" }
+                        },
+                        {
+                            "FactName": "favorite-book",
+                            "Comparison": "==",
+                            "Value": { "StringValue": "Metamorphosis" }
+                        }
+                    ]
+                }
+            ]
+        },
+        "Assertions": [
+            {
+                "Name": "favorite-liter",
+                "Value": { "StringValue": "Fiction" }
+            }
+        ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "favorite-liter",
+                    "Comparison": "?"
+                },
+                {
+                    "Operator": "OR",
+                    "Conditions": [
+                        {
+                            "FactName": "favorite-book",
+                            "Comparison": "==",
+                            "Value": { "StringValue": "Homo Deus" }
+                        },
+                        {
+                            "FactName": "favorite-book",
+                            "Comparison": "==",
+                            "Value": { "StringValue": "God as illusion" }
+                        }
+                    ]
+                }
+            ]
+        },
+        "Assertions": [
+            {
+                "Name": "favorite-liter",
+                "Value": { "StringValue": "Popular" }
+            }
+        ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "?"
+                },
+                {
+                    "FactName": "liter-type",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Epic" }
+                }
+            ]
+        },
+        "Assertions": [
+            {
+                "Name": "liter-genre",
+                "Value": { "StringValue": "Roman" }
+            }
+        ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "?"
+                },
+                {
+                    "FactName": "liter-type",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Psychology" }
+                }
+            ]
+        },
+        "Assertions": [
+            {
+                "Name": "liter-genre",
+                "Value": { "StringValue": "Humanitarian" }
+            }
+        ]
+    },
+
+
+    
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Roman" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Orwell" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "Keep the Aspidistra Flying" } ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Roman" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Strugatsky" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "Point Counter Point" } ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Roman" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Freud" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "Forward the Foundation" } ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Roman" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Gegel" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "Or-Or" } ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Tragicomedy" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Orwell" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "Burmese Days" } ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Tragicomedy" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Strugatsky" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "Interns" } ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Tragicomedy" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Freud" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "Totem and Taboo" } ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Tragicomedy" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Gegel" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "Elements of the Philosophy of Right" } ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Humanitarian" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Orwell" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "Island" } ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Humanitarian" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Strugatsky" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "The Kid from Hell" } ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Humanitarian" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Freud" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "Answer to Job" } ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Humanitarian" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Gegel" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "Philosophy of spirit" } ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Technical" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Orwell" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "Hacking on LINUX" } ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Technical" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Strugatsky" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "Until the last screw" } ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Technical" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Freud" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "Multithreaded Javascript" } ]
+    },
+
+    {
+        "Condition": {
+            "Operator": "AND",
+            "Conditions": [
+                {
+                    "FactName": "liter-genre",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Technical" }
+                },
+                {
+                    "FactName": "favorite-writer",
+                    "Comparison": "==",
+                    "Value": { "StringValue": "Gegel" }
+                }
+            ]
+        },
+        "Assertions": [ { "Name": "Fender protection" } ]
+    }
+]
