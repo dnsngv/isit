@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 namespace infsystem
 {
     // JSON-конвертер условий. Нужен для правильной полиморфической десериализации
-    // классов-наследников от абстрактного класса Condition
+    // классов-наследников от абстрактного класса Condition.
     internal class ConditionConverter : JsonConverter<Condition>
     {
         
